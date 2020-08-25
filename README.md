@@ -38,3 +38,8 @@ Fichier package.json : fichiers de toutes les dépendances
 
 
 
+<BrowserRouter> <Switch> <Route path="/"> </Route> </Switch> </BrowerRouter> : possibilté de créér des routes pour naviguer dans l'app (ici fichier APP)
+
+Dans les composants : utilisation de <NavLink to=""> </Navlink>
+
+
