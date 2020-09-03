@@ -1,6 +1,8 @@
 # ReactJs_Test
 Projet base de ReactJS
 
+rappel :
+- Const : déclaration d'une variable uniquement pour lecture != let.
 
 DOM = Document Object Model
 
