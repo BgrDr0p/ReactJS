@@ -10,7 +10,7 @@ class ToDo extends React.Component{
         this.setState(prevState => ({
             completed: !prevState.completed
         }))
-        
+        this.props.onToggleCompleted(this.props.task.id)
     }
 
     render(){

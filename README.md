@@ -44,4 +44,5 @@ Fichier package.json : fichiers de toutes les dépendances
 
 Dans les composants : utilisation de <NavLink to=""> </Navlink>
 
+Cycle de vie des composants : https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 
