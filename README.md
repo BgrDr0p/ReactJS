@@ -46,3 +46,17 @@ Dans les composants : utilisation de <NavLink to=""> </Navlink>
 
 Cycle de vie des composants : https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 
+
+Utilisation de REDUX pour gérer les états de l'app
+ - Gérer l'ensemble des états dans un objet Store
+ - Actions : mettre a jour un état en appellant un reducer
+ - Reducers : fonction qui crée un nouvel state
+
+
+Utilisation de MOBX : 
+- Utilisation de plusieurs stores 
+- Etat mutable et Redux non
+- meilleur abstraction
+- Store contenant notre Etat
+- Action : appelées par un event 
+- 
