@@ -59,4 +59,11 @@ Utilisation de MOBX :
 - meilleur abstraction
 - Store contenant notre Etat
 - Action : appelées par un event 
-- 
+
+
+
+Contexte React
+
+App.js => ToDoList.js => Todo.js Transmissions des props d'un composant à un autre
+Pour éviter ça a répétition, utilisation de API Context
+A utiliser uniquement pour transmettre des variables globales, 

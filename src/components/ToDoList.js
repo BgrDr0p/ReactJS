@@ -1,27 +1,20 @@
 import React from 'react';
-import {observer, inject} from 'mobx-react';
 import ToDo from './ToDo';
+import { TaskConsumer } from './App';
 
-@inject('store')
-@observer
-class ToDoList extends Component {
-
-    render(){
-        const store = this.props.store;
-        return ( 
-            <>
-                <h1 className="m-3">Liste de tâches</h1>
-                <ul className="list-group m-3">
-                    {
-                        store.tasks.map((task, idx) => <ToDo task={task} key={idx}  />)
-                    }
-                </ul>
-            </>
-        )
-    }
-    }
-
-
-
+const ToDoList = () => {
+    return (
+        <>
+            <h1 className="m-3">Liste de tâches</h1>
+            <TaskConsumer>
+                {({tasks}) => (
+                    <ul className="list-group m-3">
+                        { tasks.map((task) => <ToDo task={task} key={task.id} />)}
+                    </ul>
+                )}
+            </TaskConsumer>
+        </>
+    )
+}
 
 export default ToDoList;
