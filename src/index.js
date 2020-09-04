@@ -1,16 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
-import { Provider } from 'react-redux';
-import configureStore from './store/store';
+import {Provider} from 'mobx-react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/todo.css';
 
-const store = configureStore();
+
+import TaskListModel from './models/TaskListModel'
+
+const Store = new TaskListModel();
+store.addTask('Ajouter items');
+ 
 
 ReactDOM.render(
     <Provider store={store}>
         <App />
-    </Provider>
-, document.getElementById('root'));
+         </Provider>
+    , document.getElementById('root')
+);
 
